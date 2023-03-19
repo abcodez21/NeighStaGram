@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 import FirebaseStorage
-class HomeVC: UIViewController {
+class NSGHomeVC: UIViewController {
     let titleLabel = TitleLabel()
     let topView = UIView()
     let bottomView = UIView()
@@ -60,13 +60,13 @@ class HomeVC: UIViewController {
     }
     
     @objc func logoutBtnPr(){
-        let loginVC = LogInVC()
+        let loginVC = NSGLogInVC()
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: true, completion: nil)
     }
     
     @objc func postBtnPr(){
-        let postVC = PostVC()
+        let postVC = NSGPostVC()
         postVC.modalPresentationStyle = .fullScreen
         present(postVC, animated: true, completion: nil)
         
@@ -177,7 +177,7 @@ class HomeVC: UIViewController {
 
 }
 
-extension HomeVC: UITableViewDataSource{
+extension NSGHomeVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stats.count
     }

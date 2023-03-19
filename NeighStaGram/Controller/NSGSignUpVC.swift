@@ -10,7 +10,7 @@ import FirebaseAuth
 import FirebaseCore
 import FirebaseFirestore
 
-class SignUpVC: UIViewController {
+class NSGSignUpVC: UIViewController {
     
     let titleLabel = TitleLabel()
     let halfCircleImg = Edits.img(imgName: N.Img.curlyCirleImg)
@@ -31,7 +31,7 @@ class SignUpVC: UIViewController {
         
     }
     @objc func backBtnPr(){
-        let loginVC = LogInVC()
+        let loginVC = NSGLogInVC()
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: true, completion: nil)
         
@@ -66,7 +66,7 @@ class SignUpVC: UIViewController {
                             Utilites.showError(errorLabel: self.errorLabel, message: "Error saving user data")
                         }
                     }
-                    let homeVC = HomeVC()
+                    let homeVC = NSGHomeVC()
                     homeVC.modalPresentationStyle = .fullScreen
                     self.present(homeVC, animated: true, completion: nil)
                     

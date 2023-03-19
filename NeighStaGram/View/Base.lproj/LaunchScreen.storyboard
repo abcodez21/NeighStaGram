@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imglogo" translatesAutoresizingMaskIntoConstraints="NO" id="fpE-KT-LhQ">
+                                <rect key="frame" x="59.666666666666657" y="295" width="274" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="2ID-xS-v3h"/>
+                                    <constraint firstAttribute="height" constant="262" id="PNn-EY-wXk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NeighStaGram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POY-f3-qri">
+                                <rect key="frame" x="85.666666666666686" y="219" width="222" height="46"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Post It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR6-0P-LxC">
+                                <rect key="frame" x="148" y="587" width="97" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fpE-KT-LhQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6Q3-tD-MAX"/>
+                            <constraint firstItem="fpE-KT-LhQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BPg-6V-dNl"/>
+                            <constraint firstItem="POY-f3-qri" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Beo-hY-8H2"/>
+                            <constraint firstItem="fpE-KT-LhQ" firstAttribute="top" secondItem="POY-f3-qri" secondAttribute="bottom" constant="30" id="abC-Nk-Dy8"/>
+                            <constraint firstItem="fR6-0P-LxC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="g0B-hl-s4I"/>
+                            <constraint firstItem="fR6-0P-LxC" firstAttribute="top" secondItem="fpE-KT-LhQ" secondAttribute="bottom" constant="30" id="vcN-q3-lrc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imglogo" width="166.66667175292969" height="166.66667175292969"/>
+        <namedColor name="backgroundColor">
+            <color red="0.63499999046325684" green="0.52499997615814209" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

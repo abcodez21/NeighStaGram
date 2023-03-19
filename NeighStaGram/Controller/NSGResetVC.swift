@@ -9,7 +9,7 @@ import UIKit
 import FirebaseFirestore
 import FirebaseAuth
 
-class ResetVC: UIViewController {
+class NSGResetVC: UIViewController {
     let titleLabel = TitleLabel()
     let halfCircleImg = Edits.img(imgName: N.Img.curlyCirleImg)
     let curlyLineImg = Edits.img(imgName: N.Img.curlyLineImg)
@@ -27,7 +27,7 @@ class ResetVC: UIViewController {
         
     }
     @objc func backBtnPr(){
-        let loginVC = LogInVC()
+        let loginVC = NSGLogInVC()
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: true, completion: nil)
         

@@ -1,7 +1,7 @@
 import UIKit
 import FirebaseAuth
 
-class LogInVC: UIViewController {
+class NSGLogInVC: UIViewController {
     let titleLabel = TitleLabel()
     let halfCircleImg = Edits.img(imgName: N.Img.curlyCirleImg)
     let curlyLineImg = Edits.img(imgName: N.Img.curlyLineImg)
@@ -23,7 +23,6 @@ class LogInVC: UIViewController {
         
     }
     
-    
     @objc func loginBtnPr(){
         let userEmail = emailInput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let userPassword = passwordInput.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -37,7 +36,7 @@ class LogInVC: UIViewController {
                 Utilites.showError(errorLabel: self.errorLabel, message: error!.localizedDescription)
             }
             else{
-                let homeVC = HomeVC()
+                let homeVC = NSGHomeVC()
                 homeVC.modalPresentationStyle = .fullScreen
                 self.present(homeVC, animated: true, completion: nil)
             }
@@ -46,14 +45,14 @@ class LogInVC: UIViewController {
     }
     
     @objc func signUpBtnPr(){
-        let signUpVC = SignUpVC()
+        let signUpVC = NSGSignUpVC()
         signUpVC.modalPresentationStyle = .fullScreen
         present(signUpVC, animated: true, completion: nil)
         
     }
     
     @objc func forgotPasswordBtnPr(){
-        let resetVC = ResetVC()
+        let resetVC = NSGResetVC()
         resetVC.modalPresentationStyle = .fullScreen
         present(resetVC, animated: true, completion: nil)
     }
@@ -71,7 +70,6 @@ class LogInVC: UIViewController {
         Edits.setupLeftViewMode(input: emailInput, image: UIImage(systemName: "person.circle", withConfiguration: Edits.symbol())!)
         Edits.setupLeftViewMode(input: passwordInput, image: UIImage(systemName: "lock", withConfiguration: Edits.symbol())!)
         
-        
         forgotPasswordBtn.setTitle("Forgot password?", for: .normal)
         forgotPasswordBtn.titleLabel?.font =  UIFont(name:  N.Fonts.avenir_light, size: 20)
         
@@ -85,9 +83,6 @@ class LogInVC: UIViewController {
         loginBtn.addTarget(self, action: #selector(loginBtnPr), for: .touchUpInside)
         signUpBtn.addTarget(self, action: #selector(signUpBtnPr), for: .touchUpInside)
         forgotPasswordBtn.addTarget(self, action: #selector(forgotPasswordBtnPr), for: .touchUpInside)
-        
-        emailInput.text = "abc@gmail.com"
-        passwordInput.text = "FAnaye12"
         
         passwordInput.isSecureTextEntry = true
         Edits.removeAuCorrect(textFields: [passwordInput, emailInput])

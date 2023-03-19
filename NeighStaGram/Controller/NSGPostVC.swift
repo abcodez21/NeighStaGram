@@ -10,7 +10,7 @@ import FirebaseStorage
 import FirebaseFirestore
 import FirebaseAuth
 
-class PostVC: UIViewController {
+class NSGPostVC: UIViewController {
 
     let titleLabel = TitleLabel()
     let topView = UIView()
@@ -90,13 +90,13 @@ class PostVC: UIViewController {
     
     }
     @objc func logoutBtnPr(){
-        let loginVC = LogInVC()
+        let loginVC = NSGLogInVC()
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: true, completion: nil)
     }
     
     @objc func homeBtnPr(){
-        let homeVC = HomeVC()
+        let homeVC = NSGHomeVC()
         homeVC.modalPresentationStyle = .fullScreen
         present(homeVC, animated: true, completion: nil)
     }
@@ -276,7 +276,7 @@ class PostVC: UIViewController {
 }
 
 
-extension PostVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension NSGPostVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print("\(info)")
