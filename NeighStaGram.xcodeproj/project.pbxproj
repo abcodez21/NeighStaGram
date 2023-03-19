@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2652FB085EE71C410589D6 /* Pods_NeighStaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E551622C73BDEF1B81F9915 /* Pods_NeighStaGram.framework */; };
 		EC3ED98729C6603400D21CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC3ED98629C6603400D21CD3 /* GoogleService-Info.plist */; };
 		EC636C7829B0F199005B5D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC636C7729B0F199005B5D7A /* AppDelegate.swift */; };
 		EC636C7A29B0F199005B5D7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC636C7929B0F199005B5D7A /* SceneDelegate.swift */; };
@@ -31,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		249D0231A27156797927951E /* Pods-NeighStaGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeighStaGram.release.xcconfig"; path = "Target Support Files/Pods-NeighStaGram/Pods-NeighStaGram.release.xcconfig"; sourceTree = "<group>"; };
+		3E551622C73BDEF1B81F9915 /* Pods_NeighStaGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeighStaGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8378A78B8FAB6B5D730A7A69 /* Pods-NeighStaGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeighStaGram.debug.xcconfig"; path = "Target Support Files/Pods-NeighStaGram/Pods-NeighStaGram.debug.xcconfig"; sourceTree = "<group>"; };
 		EC3ED98629C6603400D21CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC636C7429B0F199005B5D7A /* NeighStaGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeighStaGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC636C7729B0F199005B5D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,18 +65,30 @@
 				ECCB5F3E29B7877B00124865 /* FirebaseAuth in Frameworks */,
 				ECCB5F4029B7877B00124865 /* FirebaseFirestore in Frameworks */,
 				EC71500029BD515600E6C474 /* FirebaseStorage in Frameworks */,
+				CE2652FB085EE71C410589D6 /* Pods_NeighStaGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF975DE8FF720ED1D7C0F19A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8378A78B8FAB6B5D730A7A69 /* Pods-NeighStaGram.debug.xcconfig */,
+				249D0231A27156797927951E /* Pods-NeighStaGram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC636C6B29B0F199005B5D7A = {
 			isa = PBXGroup;
 			children = (
 				EC636C7629B0F199005B5D7A /* NeighStaGram */,
 				EC636C7529B0F199005B5D7A /* Products */,
 				EC714FFE29BD515500E6C474 /* Frameworks */,
+				BF975DE8FF720ED1D7C0F19A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +167,7 @@
 		EC714FFE29BD515500E6C474 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E551622C73BDEF1B81F9915 /* Pods_NeighStaGram.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC636C8829B0F1A0005B5D7A /* Build configuration list for PBXNativeTarget "NeighStaGram" */;
 			buildPhases = (
+				F6063944B5C2A6E0194E3F42 /* [CP] Check Pods Manifest.lock */,
 				EC636C7029B0F199005B5D7A /* Sources */,
 				EC636C7129B0F199005B5D7A /* Frameworks */,
 				EC636C7229B0F199005B5D7A /* Resources */,
+				E73F7F35F4DA5FE3E23388A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +258,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E73F7F35F4DA5FE3E23388A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeighStaGram/Pods-NeighStaGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeighStaGram/Pods-NeighStaGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeighStaGram/Pods-NeighStaGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6063944B5C2A6E0194E3F42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeighStaGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC636C7029B0F199005B5D7A /* Sources */ = {
@@ -392,6 +453,7 @@
 		};
 		EC636C8929B0F1A0005B5D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8378A78B8FAB6B5D730A7A69 /* Pods-NeighStaGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -420,6 +482,7 @@
 		};
 		EC636C8A29B0F1A0005B5D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249D0231A27156797927951E /* Pods-NeighStaGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
